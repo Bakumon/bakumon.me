@@ -9,45 +9,112 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <style>
-        body {
-            background-color: #12100E;
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        svg {
-            width: 45%;
-        }
-    </style>
+    <link href="./output.css" rel="stylesheet">
 </head>
 
-<body>
-    <svg width="762" height="73" viewBox="0 0 762 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M678.477 72V0.5H694.677L745.277 51.9V0.5H761.277V72H745.077L694.477 20.5V72H678.477Z" fill="#E1FF00" />
-        <path
-            d="M594.01 72.5C581.277 72.5 571.41 69.4667 564.41 63.4C557.41 57.2667 553.91 48.2 553.91 36.2C553.91 24.2667 557.41 15.2667 564.41 9.2C571.41 3.06667 581.51 0 594.71 0H612.71C625.91 0 636.01 3.06667 643.01 9.2C650.01 15.2667 653.51 24.2667 653.51 36.2C653.51 48.2 650.01 57.2667 643.01 63.4C636.01 69.4667 626.077 72.5 613.21 72.5H594.01ZM595.81 13C588.41 13 582.643 14.3333 578.51 17C574.377 19.6667 571.777 23.9 570.71 29.7H636.71C635.643 23.9 633.043 19.6667 628.91 17C624.777 14.3333 619.01 13 611.61 13H595.81ZM596.11 59.5H611.61C619.077 59.5 624.843 58.1667 628.91 55.5C633.043 52.8333 635.643 48.5667 636.71 42.7H570.71C571.777 48.5667 574.377 52.8333 578.51 55.5C582.643 58.1667 588.51 59.5 596.11 59.5Z"
-            fill="#E1FF00" />
-        <path
-            d="M435.391 72V0.5H448.791L481.891 23.7H482.391L515.491 0.5H528.891V72H512.891V20.5L490.191 35.7V72H474.191V35.7L451.391 20.5V72H435.391Z"
-            fill="#E1FF00" />
-        <path
-            d="M352.806 72.5C345.54 72.5 339.806 71.5667 335.606 69.7C331.406 67.7667 328.406 64.8667 326.606 61C324.806 57.1333 323.906 52.2667 323.906 46.4V0.5H339.906V46.4C339.906 51.4667 341.073 54.9333 343.406 56.8C345.806 58.6 349.84 59.5 355.506 59.5H374.806C380.473 59.5 384.473 58.6 386.806 56.8C389.206 54.9333 390.406 51.4667 390.406 46.4V0.5H406.406V46.4C406.406 52.2667 405.506 57.1333 403.706 61C401.906 64.8667 398.906 67.7667 394.706 69.7C390.506 71.5667 384.773 72.5 377.506 72.5H352.806Z"
-            fill="white" />
-        <path
-            d="M217.695 72V0.699982H233.695V29.8H257.495L280.995 0.699982H300.895L271.495 36.3L300.895 72H280.995L257.395 42.8H233.695V72H217.695Z"
-            fill="white" />
-        <path
-            d="M105.582 72L137.782 0.5H162.482L194.682 72H177.282L170.482 56.9H129.782L122.982 72H105.582ZM135.582 43.9H164.682L150.782 13H149.482L135.582 43.9Z"
-            fill="white" />
-        <path
-            d="M0 72V0.699997L60.2 0.5C68.1333 0.5 74 2.16667 77.8 5.5C81.6667 8.76667 83.6 13.7 83.6 20.3C83.6 26.9 81.4 31.7333 77 34.8C79.9333 36.4 82.1 38.5333 83.5 41.2C84.9 43.8 85.6 47.1667 85.6 51.3C85.6 58.0333 83.6667 63.1667 79.8 66.7C76 70.1667 70.1333 71.9 62.2 71.9L0 72ZM58.3 13.3H16V29.3H58.3C64.3667 29.3 67.4 26.5667 67.4 21.1C67.4 15.9 64.3667 13.3 58.3 13.3ZM60.3 42.1H16V59.1H60.3C66.3667 59.1 69.4 56.2333 69.4 50.5C69.4 44.9 66.3667 42.1 60.3 42.1Z"
-            fill="white" />
-    </svg>
+<body class="bg-backgroundlight dark:bg-backgrounddark">
+    <div class="w-2xl max-w-full mx-auto">
+        <div class="bg-cardlight dark:bg-carddark rounded-b-xl mx-4 text-center py-4">
+            <a class="text-sm mx-3 text-textsecondarylight dark:text-textsecondarydark hover:text-theme" href="">
+                Home
+            </a>
+            <a class="text-sm mx-3 text-textsecondarylight dark:text-textsecondarydark hover:text-theme"
+                href="#projects">
+                Projects
+            </a>
+        </div>
 
+        <div class="bg-cardlight dark:bg-carddark rounded-xl py-10 mx-4 mt-6 flex flex-col items-center">
+            <img class="w-24 h-24 rounded-full" src="https://avatars.githubusercontent.com/u/12182189?v=4">
+            <div class="mt-2 text-xs text-textsecondarylight dark:text-textsecondarydark">
+                @Bakumon
+            </div>
+            <div class="mt-2 text-2xl text-textprimarylight dark:text-textprimarydark font-medium">
+                食梦兽 (Bakumon)
+            </div>
+            <div class="mt-6 text-textsecondarylight dark:text-textsecondarydark text-center text-sm">
+                Android 开发工程师 / 半生独立开发者。
+                <br>
+                喜欢做好玩的 Android 和 Web 应用。
+            </div>
+        </div>
+
+        <div class="bg-cardlight dark:bg-carddark rounded-xl mx-4 mt-6 pb-10 px-5 md:px-10">
+            <div class="text-theme text-2xl pt-8" id="projects">
+                Projects
+            </div>
+            <a class="group flex items-center bg-itemlight dark:bg-itemdark hover:bg-itemhoverlight dark:hover:bg-itemhoverdark transition-colors duration-300 rounded-xl mt-6 p-3 drop-shadow-xs"
+                href="https://fuun.fun/">
+                <img class="w-18 h-18 rounded-xl" src="https://s1.ax1x.com/2023/08/24/pPYxBTO.png">
+                <div class="grow ml-3">
+                    <div class="text-lg text-textprimarylight dark:text-textprimarydark">
+                        奇趣网站收藏家
+                    </div>
+                    <div class="text-sm text-textsecondarylight dark:text-textsecondarydark mt-1">
+                        收集那些看起来无用但却有趣的网站（Web）
+                    </div>
+                </div>
+                <div class="w-8 h-8 mr-2 rounded-md bg-cardlight dark:bg-carddark hidden md:flex">
+                    <svg class="w-4 h-4 m-auto stroke-textsecondarylight dark:stroke-textsecondarydark group-hover:stroke-theme transition-colors duration-300"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-arrow-right">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </div>
+            </a>
+            <a class="group flex items-center bg-itemlight dark:bg-itemdark hover:bg-itemhoverlight dark:hover:bg-itemhoverdark transition-colors duration-300 rounded-xl mt-6 p-3 drop-shadow-xs"
+                href="https://wallet.bakumon.me/">
+                <img class="w-18 h-18 rounded-xl"
+                    src="https://camo.githubusercontent.com/854d006495477f1a5537464a7a049961929272e2401f4bdeecd9d4c673627854/68747470733a2f2f692e6c6f6c692e6e65742f323032312f31302f30392f437954706c5648714e67737a6441752e706e67">
+                <div class="grow ml-3">
+                    <div class="text-lg text-textprimarylight dark:text-textprimarydark">
+                        那样记账
+                    </div>
+                    <div class="text-sm text-textsecondarylight dark:text-textsecondarydark mt-1">
+                        一款面向个人，纯粹的记账应用（Android）
+                    </div>
+                </div>
+                <div class="w-8 h-8 mr-2 rounded-md bg-cardlight dark:bg-carddark hidden md:flex">
+                    <svg class="w-4 h-4 m-auto stroke-textsecondarylight dark:stroke-textsecondarydark group-hover:stroke-theme transition-colors duration-300"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-arrow-right">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </div>
+            </a>
+            <a class="group flex items-center bg-itemlight dark:bg-itemdark hover:bg-itemhoverlight dark:hover:bg-itemhoverdark transition-colors duration-300 rounded-xl mt-6 p-3 drop-shadow-xs"
+                href="https://foliorss.com/">
+                <img class="w-18 h-18 rounded-xl"
+                    src="https://camo.githubusercontent.com/ec16b7997b77c061a1148dbfc959a86370422d70962e7adb3029a600bcba300f/68747470733a2f2f692e6c6f6c692e6e65742f323032312f30372f31372f495071384b4d326b663137413365622e706e67">
+                <div class="grow ml-3">
+                    <div class="text-lg text-textprimarylight dark:text-textprimarydark">
+                        Folio Reader
+                    </div>
+                    <div class="text-sm text-textsecondarylight dark:text-textsecondarydark mt-1">
+                        一款简洁现代的 RSS 阅读器（Android）
+                    </div>
+                </div>
+                <div class="w-8 h-8 mr-2 rounded-md bg-cardlight dark:bg-carddark hidden md:flex">
+                    <svg class="w-4 h-4 m-auto stroke-textsecondarylight dark:stroke-textsecondarydark group-hover:stroke-theme transition-colors duration-300"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-arrow-right">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </div>
+            </a>
+        </div>
+
+        <div
+            class="bg-cardlight dark:bg-carddark rounded-t-xl mx-4 mt-6 text-textsecondarylight dark:text-textsecondarydark text-xs text-center py-4">
+            Bakumon © 2025
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-theme: #DE6011;
+
+  --color-backgrounddark: #121318;
+  --color-carddark: #1A1B20;
+  --color-itemdark: #202229;
+  --color-itemhoverdark: #272931;
+
+  --color-textprimarydark: #FFFFFF;
+  --color-textsecondarydark: #9D9F9E;
+ 
+  
+  --color-backgroundlight: #FFFFFF;
+  --color-cardlight: #F9FAFB;
+  --color-itemlight: #F3F4F6;
+  --color-itemhoverlight: #F0F0F0;
+
+  --color-textprimarylight: #333333;
+  --color-textsecondarylight: #666666;
+
+}
